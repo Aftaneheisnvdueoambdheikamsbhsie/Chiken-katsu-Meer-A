@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Ayam Penyet Covid-19</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-logo">Ayam Penyet</div>
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        <ul id="navbar" class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Our Menu</h1>
+    </header>
+
+    <!-- Grid Menu -->
+    <section class="menu-grid">
+        <div class="menu-item">
+            <img src="aym.jpg" alt="Ayam Penyet Covid-19">
+            <p>Ayam Penyet Covid-19</p>
+            <button onclick="addToCart('ayam', 50000)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="tahu.jpg" alt="Tahu Goreng">
+            <p>Tahu Goreng</p>
+            <button onclick="addToCart('tahu', 55000)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="tempe.jpg" alt="Tempe Goreng">
+            <p>Tempe Goreng</p>
+            <button onclick="addToCart('tempe', 55000)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="terong.jpg" alt="Terong Goreng">
+            <p>Terong Goreng</p>
+            <button onclick="addToCart('terong', 55000)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="petai.jpg" alt="Petai Goreng">
+            <p>Petai Goreng</p>
+            <button onclick="addToCart('petai', 55000)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="esteh.jpg" alt="Es Teh">
+            <p>Es Teh</p>
+            <button onclick="addToCart('es teh', 55000)">Add to Cart</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
