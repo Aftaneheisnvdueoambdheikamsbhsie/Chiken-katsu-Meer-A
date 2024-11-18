@@ -4,59 +4,317 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Ayam Penyet Covid-19</title>
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="styless.css">
 </head>
+<style>
+.food-services {
+    background-color: #f9f9f9; 
+    display: flex;
+    list-style: none;
+    padding: 10px 0; 
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+    position: relative; 
+}
+
+.logo-small {
+    width: 50px;
+    height: auto;
+}
+</style>
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-logo">Ayam Penyet</div>
-        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
-        <ul id="navbar" class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
     <header>
-        <h1>Our Menu</h1>
+        <img src="dokterbg.png" alt="Logo" class="small-logo">
+        <h1>Ayam Penyet Covid-19</h1>
+        <nav>
+            <ul>
+                <li><a href="MENU.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Keranjang</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Grid Menu -->
-    <section class="menu-grid">
-        <div class="menu-item">
-            <img src="aym.jpg" alt="Ayam Penyet Covid-19">
-            <p>Ayam Penyet Covid-19</p>
-            <button onclick="addToCart('ayam', 50000)">Add to Cart</button>
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="ayam.jpeg" alt="Ayam Penyet">
+                <h3>AYAM PENYET COVID-19</h3>
+                <p>Harga: Rp 12.000</p>
+                <div class="quantity-selector">
+                    <button onclick="updateQuantity('ayam', -1)">-</button>
+                    <input type="number" class="quantity" id="qty-ayam" value="0" min="0" readonly>
+                    <button onclick="updateQuantity('ayam', 1)">+</button>
+                    <button onclick="addToCart('AYAM PENYET COVID-19', 12000, document.getElementById('qty-ayam').value)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="aym2.jpg" alt="Ayam Penyet">
+                <h3>AYAM PENYET COVID-19 Komplit</h3>
+                <p>Harga: Rp 16.000</p>
+                <div class="quantity-selector">
+                    <button onclick="updateQuantity('ayampenyet', -1)">-</button>
+                    <input type="number" class="quantity" id="qty-ayampenyet" value="0" min="0" readonly>
+                    <button onclick="updateQuantity('ayampenyet', 1)">+</button>
+                    <button onclick="addToCart('AYAM PENYET COVID-19 Komplit', 16000, document.getElementById('qty-ayampenyet').value)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="terong2.jpg" alt="Terong Goreng">
+                <h3>Terong Goreng</h3>
+                <p>Harga: Rp 3.000/buah</p>
+                <div class="quantity-selector">
+                    <button onclick="updateQuantity('terong', -1)">-</button>
+                    <input type="number" class="quantity" id="qty-terong" value="0" min="0" readonly>
+                    <button onclick="updateQuantity('terong', 1)">+</button>
+                    <button onclick="addToCart('Terong Goreng', 3000, document.getElementById('qty-terong').value)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="petai2.jpg" alt="Petai Goreng">
+                <h3>Petai Goreng</h3>
+                <p>Harga: Rp 8.000 /Papan</p>
+                <div class="quantity-selector">
+                    <button onclick="updateQuantity('petai', -1)">-</button>
+                    <input type="number" class="quantity" id="qty-petai" value="0" min="0" readonly>
+                    <button onclick="updateQuantity('petai', 1)">+</button>
+                    <button onclick="addToCart('Petai Goreng', 8000, document.getElementById('qty-petai').value)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="tahu2.jpg" alt="Tahu Goreng">
+                <h3>Tahu Goreng</h3>
+                <p>Harga: Rp 2.000/Potong</p>
+                <div class="quantity-selector">
+                    <button onclick="updateQuantity('tahu', -1)">-</button>
+                    <input type="number" class="quantity" id="qty-tahu" value="0" min="0" readonly>
+                    <button onclick="updateQuantity('tahu', 1)">+</button>
+                    <button onclick="addToCart('Tahu Goreng', 2000, document.getElementById('qty-tahu').value)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+                <div class="menu-item">
+                <img src="tempe2.jpg" alt="Tempe Goreng">
+                <h3>Tempe Goreng</h3>
+                <p>Harga: Rp 2.000/Potong</p>
+                <div class="quantity-selector">
+                    <button onclick="updateQuantity('tempe', -1)">-</button>
+                    <input type="number" class="quantity" id="qty-tempe" value="0" min="0" readonly>
+                    <button onclick="updateQuantity('tempe', 1)">+</button>
+                    <button onclick="addToCart('Tempe Goreng', 2000, document.getElementById('qty-tempe').value)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="sambal.jpg" alt="Sambal merah">
+                <h3>Sambal merah</h3>
+                <p>Harga: Rp 5.000/bungkus</p>
+                <div class="quantity-selector">
+                    <button onclick="updateQuantity('sambal', -1)">-</button>
+                    <input type="number" class="quantity" id="qty-sambal" value="0" min="0" readonly>
+                    <button onclick="updateQuantity('sambal', 1)">+</button>
+                    <button onclick="addToCart('Sambal merah', 5000, document.getElementById('qty-sambal').value)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="bumbu.jpg" alt="Bumbu Hitam">
+                <h3>Bumbu Hitam</h3>
+                <p>Harga: Rp 5.000/bungkus</p>
+                <div class="quantity-selector">
+                    <button onclick="updateQuantity('bumbu', -1)">-</button>
+                    <input type="number" class="quantity" id="qty-bumbu" value="0" min="0" readonly>
+                    <button onclick="updateQuantity('bumbu', 1)">+</button>
+                    <button onclick="addToCart('Bumbu Hitam', 5000, document.getElementById('qty-bumbu').value)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+             <div class="menu-item">
+                <img src="ati.jpg" alt="Sate Ati Ampela">
+                <h3>Sate Ati Ampela</h3>
+                <p>Harga: Rp 5.000/Tusuk</p>
+                <div class="quantity-selector">
+                    <button onclick="updateQuantity('ati', -1)">-</button>
+                    <input type="number" class="quantity" id="qty-ati" value="0" min="0" readonly>
+                    <button onclick="updateQuantity('ati', 1)">+</button>
+                    <button onclick="addToCart('Sate Ati Ampela', 5000, document.getElementById('qty-ati').value)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+             <div class="menu-item">
+                <img src="usus.jpg" alt="Sate Kulit">
+                <h3>Sate Kulit</h3>
+                <p>Harga: Rp 4.000/Tusuk</p>
+                <div class="quantity-selector">
+                    <button onclick="updateQuantity('kulit', -1)">-</button>
+                    <input type="number" class="quantity" id="qty-kulit" value="0" min="0" readonly>
+                    <button onclick="updateQuantity('kulit', 1)">+</button>
+                    <button onclick="addToCart('Sate Kulit', 4000, document.getElementById('qty-kulit').value)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+             <div class="menu-item">
+                <img src="rambak.jpg" alt="Kerupuk Rambak">
+                <h3>Kerupuk Rambak</h3>
+                <p>Harga: Rp 3.000/Bungkus</p>
+                <div class="quantity-selector">
+                    <button onclick="updateQuantity('rambak', -1)">-</button>
+                    <input type="number" class="quantity" id="qty-rambak" value="0" min="0" readonly>
+                    <button onclick="updateQuantity('rambak', 1)">+</button>
+                    <button onclick="addToCart('Kerupuk Rambak', 3000, document.getElementById('qty-rambak').value)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+             <div class="menu-item">
+                <img src="jengkol.jpg" alt="Kerupuk Jengkol">
+                <h3>Kerupuk Jengkol</h3>
+                <p>Harga: Rp 3.000/Bungkus</p>
+                <div class="quantity-selector">
+                    <button onclick="updateQuantity('jengkol', -1)">-</button>
+                    <input type="number" class="quantity" id="qty-jengkol" value="0" min="0" readonly>
+                    <button onclick="updateQuantity('jengkol', 1)">+</button>
+                    <button onclick="addToCart('Kerupuk Jengkol', 3000, document.getElementById('qty-jengkol').value)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+                <div class="menu-item">
+                <img src="esteh.jpg" alt="Es Teh">
+                <h3>ES TEH SUEGERR</h3>
+                <p>Harga: Rp 4.000</p>
+                <div class="quantity-selector">
+                    <button onclick="updateQuantity('esteh', -1)">-</button>
+                    <input type="number" class="quantity" id="qty-esteh" value="0" min="0" readonly>
+                    <button onclick="updateQuantity('esteh', 1)">+</button>
+                    <button onclick="addToCart('ES TEH SUEGERR', 4000, document.getElementById('qty-esteh').value)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+                <div class="menu-item">
+                <img src="tehpns2.jpg" alt="Teh">
+                <h3>TEH PANAS</h3>
+                <p>Harga: Rp 4.000</p>
+                <div class="quantity-selector">
+                    <button onclick="updateQuantity('teh', -1)">-</button>
+                    <input type="number" class="quantity" id="qty-esteh" value="0" min="0" readonly>
+                    <button onclick="updateQuantity('teh', 1)">+</button>
+                    <button onclick="addToCart('TEH PANAS', 4000, document.getElementById('qty-teh').value)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+                <div class="menu-item">
+                <img src="esjeruk2.jpg" alt="Es jeruk">
+                <h3>ES JERUK PERAS</h3>
+                <p>Harga: Rp 5.000</p>
+                <div class="quantity-selector">
+                    <button onclick="updateQuantity('esjeruk', -1)">-</button>
+                    <input type="number" class="quantity" id="qty-esjeruk" value="0" min="0" readonly>
+                    <button onclick="updateQuantity('esjeruk', 1)">+</button>
+                    <button onclick="addToCart('ES TEH SUEGERR', 5000, document.getElementById('qty-esjeruk').value)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+                <div class="menu-item">
+                <img src="jerukpns.jpg" alt="jerukpanas">
+                <h3>Jeruk Hangat</h3>
+                <p>Harga: Rp 5.000</p>
+                <div class="quantity-selector">
+                    <button onclick="updateQuantity('jerukpanas', -1)">-</button>
+                    <input type="number" class="quantity" id="qty-jerukpanas" value="0" min="0" readonly>
+                    <button onclick="updateQuantity('jerukpanas', 1)">+</button>
+                    <button onclick="addToCart('Jeruk Hangat', 5000, document.getElementById('qty-jerukpanas').value)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="kopies.jpg" alt="eskopi">
+                <h3>Es Kopi</h3>
+                <p>Harga: Rp 5.000</p>
+                <div class="quantity-selector">
+                    <button onclick="updateQuantity('eskopi', -1)">-</button>
+                    <input type="number" class="quantity" id="qty-eskopi" value="0" min="0" readonly>
+                    <button onclick="updateQuantity('eskopi', 1)">+</button>
+                    <button onclick="addToCart('Es Kopi', 5000, document.getElementById('qty-eskopi').value)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="kopi2.jpg" alt="Kopi">
+                <h3>Kopi Panas</h3>
+                <p>Harga: Rp 5.000</p>
+                <div class="quantity-selector">
+                    <button onclick="updateQuantity('kopi', -1)">-</button>
+                    <input type="number" class="quantity" id="qty-kopi" value="0" min="0" readonly>
+                    <button onclick="updateQuantity('kopi', 1)">+</button>
+                    <button onclick="addToCart('kopi panas', 5000, document.getElementById('qty-kopi').value)">Tambah ke Keranjang</button>
+                </div>
+            </div>    
         </div>
-        <div class="menu-item">
-            <img src="tahu.jpg" alt="Tahu Goreng">
-            <p>Tahu Goreng</p>
-            <button onclick="addToCart('tahu', 55000)">Add to Cart</button>
-        </div>
-        <div class="menu-item">
-            <img src="tempe.jpg" alt="Tempe Goreng">
-            <p>Tempe Goreng</p>
-            <button onclick="addToCart('tempe', 55000)">Add to Cart</button>
-        </div>
-        <div class="menu-item">
-            <img src="terong.jpg" alt="Terong Goreng">
-            <p>Terong Goreng</p>
-            <button onclick="addToCart('terong', 55000)">Add to Cart</button>
-        </div>
-        <div class="menu-item">
-            <img src="petai.jpg" alt="Petai Goreng">
-            <p>Petai Goreng</p>
-            <button onclick="addToCart('petai', 55000)">Add to Cart</button>
-        </div>
-        <div class="menu-item">
-            <img src="esteh.jpg" alt="Es Teh">
-            <p>Es Teh</p>
-            <button onclick="addToCart('es teh', 55000)">Add to Cart</button>
-        </div>
+        
     </section>
+    
+<ul class="food-services">
+    <li><a href="https://shopee.co.id/universal-link/now-food/shop/1256614?deep_and_deferred=1"><img src="Shopfood.png" alt="ShopeeFood Logo" class="logo-small"></li>
+    <li><a href="https://wa.me/+6285781025125"><img src="WA.png" alt="WhatsApp Logo" class="logo-small"></a></li>
+    <li><img src="GoFood.png" alt="GoFood Logo" class="logo-small"></li>
+    <li><img src="Grabfood.svg" alt="GrabFood Logo" class="logo-small"></li>
+</ul>
 
-    <script src="script.js"></script>
+  <footer>
+        <p>&copy; APC-19 2024 Ayam Penyet Covid-19. All rights reserved.</p>
+    </footer>
+
+<script>
+    const cart = JSON.parse(sessionStorage.getItem('cart')) || [];
+
+    function addToCart(item, price, quantity) {
+        const currentHour = new Date().getHours();
+        
+        // Cek apakah saat ini berada dalam waktu operasional (jam 18 - 24)
+        if (currentHour < 16 || currentHour > 24) {
+            alert("Maaf, kami hanya menerima pesanan antara jam 16:00 hingga 24:00.");
+            return;
+        }
+        
+        const qty = parseInt(quantity);
+        if (qty > 0) {
+            for (let i = 0; i < qty; i++) {
+                cart.push({ item, price });
+            }
+            alert(qty + " x " + item + " telah ditambahkan ke keranjang!");
+            sessionStorage.setItem('cart', JSON.stringify(cart));
+
+            // Tanyakan apakah pelanggan ingin menambah item atau tidak
+            askForMoreOrders();
+        } else {
+            alert("Silakan masukkan jumlah yang valid.");
+        }
+    }
+
+    function updateQuantity(id, change) {
+        const quantityInput = document.getElementById('qty-' + id);
+        let currentValue = parseInt(quantityInput.value);
+        currentValue += change;
+        if (currentValue < 0) currentValue = 0;
+        quantityInput.value = currentValue;
+    }
+
+    function askForMoreOrders() {
+        const moreOrders = confirm("Apakah masih ada yang ingin Anda pesan?");
+        if (moreOrders) {
+            // Jika pelanggan ingin pesan lagi, biarkan mereka melanjutkan.
+            alert("Silakan tambahkan lagi ke keranjang.");
+        } else {
+            const orderOnWhatsApp = confirm("Apakah Anda ingin memesan lewat WhatsApp?");
+            if (orderOnWhatsApp) {
+                // Jika pelanggan memilih WhatsApp, buka WhatsApp dengan pesan otomatis
+                window.location.href = 'https://wa.me/+6281212111004?text=' + encodeURIComponent(getCartSummary());
+            } else {
+                // Jika pelanggan tidak memilih WhatsApp, arahkan ke halaman keranjang
+                window.location.href = "cart.html";
+            }
+        }
+    }
+
+    function getCartSummary() {
+        let cartItems = JSON.parse(sessionStorage.getItem('cart')) || [];
+        let summary = "Pesanan Anda: \n";
+        cartItems.forEach((item, index) => {
+            summary += `${index + 1}. ${item.item} - Rp ${item.price}\n`;
+        });
+        summary += "\nTotal item: " + cartItems.length;
+        return summary;
+    }
+</script>
 </body>
 </html>
