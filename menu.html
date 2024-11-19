@@ -42,47 +42,47 @@
         <h2>Our Menu</h2>
         <div class="menu-grid">
             <div class="menu-item">
-                <img src="ktsori.jpeg" alt="Ayam Penyet">
+                <img src="ktsori.jpeg" alt="Chick-Tsu Original">
                 <h3>Chick-Tsu Original</h3>
                 <p>Harga: Rp 13.000</p>
                 <div class="quantity-selector">
                     <button onclick="updateQuantity('ayam', -1)">-</button>
                     <input type="number" class="quantity" id="qty-ayam" value="0" min="0" readonly>
                     <button onclick="updateQuantity('ayam', 1)">+</button>
-                    <button onclick="addToCart('AYAM PENYET COVID-19', 12000, document.getElementById('qty-ayam').value)">Tambah ke Keranjang</button>
+                    <button onclick="addToCart('Chick-Tsu Original', 13000, document.getElementById('qty-ayam').value)">Tambah ke Keranjang</button>
                 </div>
             </div>
             <div class="menu-item">
-                <img src="ktsbarbeq.jpeg" alt="Ayam Penyet">
+                <img src="ktsbarbeq.jpeg" alt="Chick-Tsu Barbeque">
                 <h3>Chick-Tsu Barbeque</h3>
                 <p>Harga: Rp 15.000</p>
                 <div class="quantity-selector">
                     <button onclick="updateQuantity('ayampenyet', -1)">-</button>
                     <input type="number" class="quantity" id="qty-ayampenyet" value="0" min="0" readonly>
                     <button onclick="updateQuantity('ayampenyet', 1)">+</button>
-                    <button onclick="addToCart('AYAM PENYET COVID-19 Komplit', 16000, document.getElementById('qty-ayampenyet').value)">Tambah ke Keranjang</button>
+                    <button onclick="addToCart('Chick-Tsu Barbeque', 15000, document.getElementById('qty-ayampenyet').value)">Tambah ke Keranjang</button>
                 </div>
             </div>
             <div class="menu-item">
-                <img src="ktsmusrom.jpeg" alt="Terong Goreng">
+                <img src="ktsmusrom.jpeg" alt="Chick-Tsu Mushroom">
                 <h3>Chick-Tsu Mushroom</h3>
                 <p>Harga: Rp 17.000</p>
                 <div class="quantity-selector">
                     <button onclick="updateQuantity('terong', -1)">-</button>
                     <input type="number" class="quantity" id="qty-terong" value="0" min="0" readonly>
                     <button onclick="updateQuantity('terong', 1)">+</button>
-                    <button onclick="addToCart('Terong Goreng', 17000, document.getElementById('qty-terong').value)">Tambah ke Keranjang</button>
+                    <button onclick="addToCart('Chick-Tsu Mushroom', 17000, document.getElementById('qty-terong').value)">Tambah ke Keranjang</button>
                 </div>
             </div>
             <div class="menu-item">
-                <img src="ktstiram.jpeg" alt="Teriyaki">
+                <img src="ktstiram.jpeg" alt="Chick-Tsu Teriyaki">
                 <h3>Chick-Tsu Teriyaki</h3>
                 <p>Harga: Rp 18.000 </p>
                 <div class="quantity-selector">
                     <button onclick="updateQuantity('teriyaki', -1)">-</button>
                     <input type="number" class="quantity" id="qty-teriyaki" value="0" min="0" readonly>
                     <button onclick="updateQuantity('teriyaki', 1)">+</button>
-                    <button onclick="addToCart('Teriyaki', 18000, document.getElementById('qty-teriyaki').value)">Tambah ke Keranjang</button>
+                    <button onclick="addToCart('Chick-Tsu Teriyaki', 18000, document.getElementById('qty-teriyaki').value)">Tambah ke Keranjang</button>
                 </div>
             </div>
             <div class="menu-item">
@@ -107,138 +107,49 @@
                     <button onclick="addToCart('Tang-Tsu (Kentang Katsu)', 16000, document.getElementById('qty-tempe').value)">Tambah ke Keranjang</button>
                 </div>
             </div>
-            <div class="menu-item">
-                <img src="sambal.jpg" alt="Sambal merah">
-                <h3>Sambal merah</h3>
-                <p>Harga: Rp 5.000/bungkus</p>
-                <div class="quantity-selector">
-                    <button onclick="updateQuantity('sambal', -1)">-</button>
-                    <input type="number" class="quantity" id="qty-sambal" value="0" min="0" readonly>
-                    <button onclick="updateQuantity('sambal', 1)">+</button>
-                    <button onclick="addToCart('Sambal merah', 5000, document.getElementById('qty-sambal').value)">Tambah ke Keranjang</button>
-                </div>
-            </div>
-            <div class="menu-item">
-                <img src="bumbu.jpg" alt="Bumbu Hitam">
-                <h3>Bumbu Hitam</h3>
-                <p>Harga: Rp 5.000/bungkus</p>
-                <div class="quantity-selector">
-                    <button onclick="updateQuantity('bumbu', -1)">-</button>
-                    <input type="number" class="quantity" id="qty-bumbu" value="0" min="0" readonly>
-                    <button onclick="updateQuantity('bumbu', 1)">+</button>
-                    <button onclick="addToCart('Bumbu Hitam', 5000, document.getElementById('qty-bumbu').value)">Tambah ke Keranjang</button>
-                </div>
-            </div>
-             <div class="menu-item">
-                <img src="ati.jpg" alt="Sate Ati Ampela">
-                <h3>Sate Ati Ampela</h3>
-                <p>Harga: Rp 5.000/Tusuk</p>
-                <div class="quantity-selector">
-                    <button onclick="updateQuantity('ati', -1)">-</button>
-                    <input type="number" class="quantity" id="qty-ati" value="0" min="0" readonly>
-                    <button onclick="updateQuantity('ati', 1)">+</button>
-                    <button onclick="addToCart('Sate Ati Ampela', 5000, document.getElementById('qty-ati').value)">Tambah ke Keranjang</button>
-                </div>
-            </div>
-             <div class="menu-item">
-                <img src="usus.jpg" alt="Sate Kulit">
-                <h3>Sate Kulit</h3>
-                <p>Harga: Rp 4.000/Tusuk</p>
-                <div class="quantity-selector">
-                    <button onclick="updateQuantity('kulit', -1)">-</button>
-                    <input type="number" class="quantity" id="qty-kulit" value="0" min="0" readonly>
-                    <button onclick="updateQuantity('kulit', 1)">+</button>
-                    <button onclick="addToCart('Sate Kulit', 4000, document.getElementById('qty-kulit').value)">Tambah ke Keranjang</button>
-                </div>
-            </div>
-             <div class="menu-item">
-                <img src="rambak.jpg" alt="Kerupuk Rambak">
-                <h3>Kerupuk Rambak</h3>
-                <p>Harga: Rp 3.000/Bungkus</p>
-                <div class="quantity-selector">
-                    <button onclick="updateQuantity('rambak', -1)">-</button>
-                    <input type="number" class="quantity" id="qty-rambak" value="0" min="0" readonly>
-                    <button onclick="updateQuantity('rambak', 1)">+</button>
-                    <button onclick="addToCart('Kerupuk Rambak', 3000, document.getElementById('qty-rambak').value)">Tambah ke Keranjang</button>
-                </div>
-            </div>
-             <div class="menu-item">
-                <img src="jengkol.jpg" alt="Kerupuk Jengkol">
-                <h3>Kerupuk Jengkol</h3>
-                <p>Harga: Rp 3.000/Bungkus</p>
-                <div class="quantity-selector">
-                    <button onclick="updateQuantity('jengkol', -1)">-</button>
-                    <input type="number" class="quantity" id="qty-jengkol" value="0" min="0" readonly>
-                    <button onclick="updateQuantity('jengkol', 1)">+</button>
-                    <button onclick="addToCart('Kerupuk Jengkol', 3000, document.getElementById('qty-jengkol').value)">Tambah ke Keranjang</button>
-                </div>
-            </div>
                 <div class="menu-item">
-                <img src="esteh.jpg" alt="Es Teh">
-                <h3>ES TEH SUEGERR</h3>
-                <p>Harga: Rp 4.000</p>
+                <img src="AmericaTT.jpeg" alt="Americano Iced Thai Tea">
+                <h3>Americano Iced Thai Tea</h3>
+                <p>Harga: Rp 8.000</p>
                 <div class="quantity-selector">
                     <button onclick="updateQuantity('esteh', -1)">-</button>
                     <input type="number" class="quantity" id="qty-esteh" value="0" min="0" readonly>
                     <button onclick="updateQuantity('esteh', 1)">+</button>
-                    <button onclick="addToCart('ES TEH SUEGERR', 4000, document.getElementById('qty-esteh').value)">Tambah ke Keranjang</button>
+                    <button onclick="addToCart('Americano Iced Thai Tea', 8000, document.getElementById('qty-esteh').value)">Tambah ke Keranjang</button>
                 </div>
             </div>
                 <div class="menu-item">
-                <img src="tehpns2.jpg" alt="Teh">
-                <h3>TEH PANAS</h3>
-                <p>Harga: Rp 4.000</p>
-                <div class="quantity-selector">
-                    <button onclick="updateQuantity('teh', -1)">-</button>
-                    <input type="number" class="quantity" id="qty-esteh" value="0" min="0" readonly>
-                    <button onclick="updateQuantity('teh', 1)">+</button>
-                    <button onclick="addToCart('TEH PANAS', 4000, document.getElementById('qty-teh').value)">Tambah ke Keranjang</button>
-                </div>
-            </div>
-                <div class="menu-item">
-                <img src="esjeruk2.jpg" alt="Es jeruk">
-                <h3>ES JERUK PERAS</h3>
-                <p>Harga: Rp 5.000</p>
+                <img src="sodalemon.jpeg" alt="Iced Lemonade with Soda">
+                <h3>Iced Lemonade with Soda</h3>
+                <p>Harga: Rp 8.000</p>
                 <div class="quantity-selector">
                     <button onclick="updateQuantity('esjeruk', -1)">-</button>
                     <input type="number" class="quantity" id="qty-esjeruk" value="0" min="0" readonly>
                     <button onclick="updateQuantity('esjeruk', 1)">+</button>
-                    <button onclick="addToCart('ES TEH SUEGERR', 5000, document.getElementById('qty-esjeruk').value)">Tambah ke Keranjang</button>
+                    <button onclick="addToCart('Iced Lemonade with Soda', 8000, document.getElementById('qty-esjeruk').value)">Tambah ke Keranjang</button>
                 </div>
-            </div>
-                <div class="menu-item">
-                <img src="jerukpns.jpg" alt="jerukpanas">
-                <h3>Jeruk Hangat</h3>
-                <p>Harga: Rp 5.000</p>
-                <div class="quantity-selector">
-                    <button onclick="updateQuantity('jerukpanas', -1)">-</button>
-                    <input type="number" class="quantity" id="qty-jerukpanas" value="0" min="0" readonly>
-                    <button onclick="updateQuantity('jerukpanas', 1)">+</button>
-                    <button onclick="addToCart('Jeruk Hangat', 5000, document.getElementById('qty-jerukpanas').value)">Tambah ke Keranjang</button>
-                </div>
-            </div>
             <div class="menu-item">
-                <img src="kopies.jpg" alt="eskopi">
-                <h3>Es Kopi</h3>
-                <p>Harga: Rp 5.000</p>
+                <img src="smoothies.jpeg" alt="Smoothies Buah">
+                <h3>Smoothies Buah</h3>
+                <p>Harga: Rp 10.000</p>
                 <div class="quantity-selector">
                     <button onclick="updateQuantity('eskopi', -1)">-</button>
                     <input type="number" class="quantity" id="qty-eskopi" value="0" min="0" readonly>
                     <button onclick="updateQuantity('eskopi', 1)">+</button>
-                    <button onclick="addToCart('Es Kopi', 5000, document.getElementById('qty-eskopi').value)">Tambah ke Keranjang</button>
+                    <button onclick="addToCart('Smoothies Buah', 10000, document.getElementById('qty-eskopi').value)">Tambah ke Keranjang</button>
                 </div>
             </div>
-            <div class="menu-item">
-                <img src="kopi2.jpg" alt="Kopi">
-                <h3>Kopi Panas</h3>
-                <p>Harga: Rp 5.000</p>
+                <div class="menu-item">
+                <img src="Es teler.jpeg" alt="Iced Teler 3 Hari">
+                <h3>Iced Teler 3 Hari</h3>
+                <p>Harga: Rp 12.000</p>
                 <div class="quantity-selector">
-                    <button onclick="updateQuantity('kopi', -1)">-</button>
-                    <input type="number" class="quantity" id="qty-kopi" value="0" min="0" readonly>
-                    <button onclick="updateQuantity('kopi', 1)">+</button>
-                    <button onclick="addToCart('kopi panas', 5000, document.getElementById('qty-kopi').value)">Tambah ke Keranjang</button>
+                    <button onclick="updateQuantity('esteler', -1)">-</button>
+                    <input type="number" class="quantity" id="qty-esteler" value="0" min="0" readonly>
+                    <button onclick="updateQuantity('eskopi', 1)">+</button>
+                    <button onclick="addToCart('Iced Teler 3 Hari', 12000, document.getElementById('qty-esteler').value)">Tambah ke Keranjang</button>
                 </div>
-            </div>    
+            </div>
         </div>
         
     </section>
