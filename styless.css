@@ -13,10 +13,10 @@ body {
 }
 
 header {
-    background-color:linear-gradient(90deg, #FFA07A, #FF7F50, #FF6347);
+    background-color: linear-gradient(45deg, #CC5500, #FF4500, #FF6347);
     padding: 20px;
     text-align: center;
-    color:white;
+    color:#fff;
 }
 
 header h1 {
